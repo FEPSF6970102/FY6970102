@@ -1,193 +1,282 @@
 <!DOCTYPE html>
-
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The rockets into the modern world</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  </head>
-    <img src="WebBanner2026.png" alt="Banner" width="900" height="300">
-      <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
-      <h2>Student URN: 6970102</h2>
-    <hr> 
-     <h2 style=”font-family:calibri:”><b>Conference paper: Bridge Deck Repairs</b></h2>
-    <hr
+        <!-- Style for tables and layout -->
+        <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 30%;
+            }
 
-       <!style for tables>
-      <style>
-        table {
-          font-family : arial, sans-serif;
-          border-collapse: collapse
-          width:30%;
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
 
-          }
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
 
-          td, th {
-            border : 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-          }
+            p.ex1 {
+              margin-left: 0px;
+              max-width: 900px;
+              line-height: 1.6;
+            }
 
-          tr:nth-child(even) {
-            background-color: #dddddd;
-          }
-
-
-
-   
-      </style>
-
-  <style>
-p.ex1 {
-  margin-left:250px;
-}
-  </style>
-  
+            .mySlides {
+              display: none;
+            }
+        </style>
     </head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css
-<style>
-.mySlides {display:none;}
-</style>
-  <body style="background-color:#FFFFFF;margin-left:50px;">
-  <h3 id="Abstract">Abstract</h3>
 
+    <body style="background-color:#FFFFFF; margin-left:50px; position: relative;">
 
-  <!table of contents>
-  <table>
+        <img src="download.png" alt="Banner" width="1200" height="300">
 
-  <tr>
-    <th><h3>Table of contents</h3></th>
-  </tr>
-  <tr>
-    <td><a href="#Abstract">Abstract</td>
-  </tr>
-  <tr>
-    <td><a href="#Introduction">Introduction</td>
-  </tr>
-  <tr>
-    <td><a href="#Analysis and discussion">Analysis and discussion</td>
-  </tr>
+        <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
+        <h2>Student URN: 6970102</h2>
+        <hr>
+        <h2 style="font-family:calibri;"><b>Conference paper: The rockets into the modern world: analyse of propulsion technology and its global impact</b></h2>
+        <hr>
 
-  <tr>
-    <td><a href="#References">References</td>
-  </tr>
-  </table>
-  <p class="ex1>
-  <pre>
-    This paper presents a novel adaptive active learning stragetgy etc.
-    </pre>
-    </p>
-    <!DOCTYPE html>
-<html>
-<head>
-<title>MathML Example</title>
-</head>
-<body>
-<h1>Quadratic Formula</h1>
-<p>The quadratic formula is given by:.</p>
-<!--MathML representations of the quadratic formula-->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<msup><mi>x</mi><mn>2</mn></msup>
-<mo>+</mo><mi>4</mi><mo>&InvisibleTimes;</mo><mi>x</mi>
-<mo>+</mo><mi>4</mi>
-<mo>=</mo>
-<mi>0</mi>
-</body>
-</html>
-
-  <p class="ex1>
-  <pre>
-    Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-to improve the classification model. Various strategies have been proposed including; Query by
-Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-labels. After adding the newly labeled instances to the current training set, a revised model is
-subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-learning at each epoch. The process is continued until some stopping criterion has been met, such as
-reaching a stage where information from the selected instances is contrary to the model, causing the
-classifier confidence to drop, as in Vlachos (2008)
-  </pre>
-  </p>
-    </html>
-      
- <!-- 3D ASCII Cube JavaScript Engine -->
+        <!-- ////////////////////////////// Time stamp (supplied code, Lab H3) ////////////////////////////// -->
+        <!-- Last commit time display -->
+        <div id="last-updated">Loading last update time...</div>
+        <!-- Verify Button -->
+        <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+            Verify Last Modified Time
+        </button>
         <script>
-        (function () {
-          let A = 0, B = 0, C = 0;
-          const width = 56, height = 36; // Expanded grid width & height to prevent clipping
-          const zBuffer = new Array(width * height);
-          const buffer = new Array(width * height);
-          const backgroundASCIICode = ' ';
-          const distanceFromCam = 100;
-          const K1 = 40;
-          const cubeWidth = 20;
+            async function getLastUpdatedTime() {
+                const username = 'YOUR-GITHUB-USERNAME';
+                const repo = 'YOUR-REPO-NAME';
 
-          function calculateX(i, j, k) {
-            return j * Math.sin(A) * Math.sin(B) * Math.cos(C) - k * Math.cos(A) * Math.sin(B) * Math.cos(C) +
-                   j * Math.cos(A) * Math.sin(C) + k * Math.sin(A) * Math.sin(C) + i * Math.cos(B) * Math.cos(C);
-          }
+                const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+                try {
+                    const response = await fetch(url, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/vnd.github.v3+json',
+                        }
+                    });
+                    if (!response.ok) {
+                        throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+                    }
+                    const commits = await response.json();
+                    if (commits && commits.length > 0) {
+                        const lastCommitDate = new Date(commits[0].commit.committer.date);
 
-          function calculateY(i, j, k) {
-            return j * Math.cos(A) * Math.cos(C) + k * Math.sin(A) * Math.cos(C) -
-                   j * Math.sin(A) * Math.sin(B) * Math.sin(C) + k * Math.cos(A) * Math.sin(B) * Math.sin(C) -
-                   i * Math.cos(B) * Math.sin(C);
-          }
-
-          function calculateZ(i, j, k) {
-            return k * Math.cos(A) * Math.cos(B) - j * Math.sin(A) * Math.cos(B) + i * Math.sin(B) + distanceFromCam;
-          }
-
-          function calculateForSurface(cubeX, cubeY, cubeZ, ch) {
-            let x = calculateX(cubeX, cubeY, cubeZ);
-            let y = calculateY(cubeX, cubeY, cubeZ);
-            let z = calculateZ(cubeX, cubeY, cubeZ);
-
-            let ooz = 1 / z;
-            let xp = Math.floor(width / 2 + K1 * ooz * x * 2);
-            let yp = Math.floor(height / 2 + K1 * ooz * y);
-
-            let idx = xp + yp * width;
-            if (idx >= 0 && idx < width * height) {
-              if (ooz > zBuffer[idx]) {
-                zBuffer[idx] = ooz;
-                buffer[idx] = ch;
-              }
+                        // Displaying the time on load
+                        document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+                    } else {
+                        document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+                    }
+                } catch (error) {
+                    console.error('Error fetching the last updated time:', error);
+                    document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+                }
             }
-          }
-
-          function renderFrame() {
-            buffer.fill(backgroundASCIICode);
-            zBuffer.fill(0);
-
-            let incrementSpeed = 1.2;
-            for (let cubeX = -cubeWidth; cubeX < cubeWidth; cubeX += incrementSpeed) {
-              for (let cubeY = -cubeWidth; cubeY < cubeWidth; cubeY += incrementSpeed) {
-                calculateForSurface(cubeX, cubeY, -cubeWidth, '@');
-                calculateForSurface(cubeWidth, cubeY, cubeX, '$');
-                calculateForSurface(-cubeWidth, cubeY, -cubeX, '~');
-                calculateForSurface(-cubeX, cubeY, cubeWidth, '#');
-                calculateForSurface(cubeX, -cubeWidth, -cubeY, ';');
-                calculateForSurface(cubeX, cubeWidth, cubeY, '+');
-              }
+            // Function to verify the last update time by re-fetching it from the API
+            async function verifyLastUpdatedTime() {
+                document.getElementById('last-updated').innerText = 'Verifying...';
+                await getLastUpdatedTime();
+                alert("Last modified time has been successfully verified from GitHub API.");
             }
-
-            let output = '';
-            for (let i = 0; i < buffer.length; i++) {
-              output += i % width === 0 && i !== 0 ? '\n' + buffer[i] : buffer[i];
-            }
-
-            const elem = document.getElementById('ascii-cube');
-            if (elem) elem.textContent = output;
-
-            A += 0.04;
-            B += 0.04;
-            C += 0.01;
-          }
-
-          setInterval(renderFrame, 30);
-        })();
         </script>
+
+        <!-- ////////////////////////////// Word count (supplied code, Lab H3) ////////////////////////////// -->
+        <!-- Placeholder for total word count -->
+        <p id="totalWordCount"></p>
+        <hr>
+
+        <!-- Table of Contents -->
+        <p class="ex1">
+        <table>
+          <tr>
+            <th><h3>Table of contents</h3></th>
+          </tr>
+          <tr>
+            <td><a href="#Abstract">Abstract</a></td>
+          </tr>
+          <tr>
+            <td><a href="#Introduction">Introduction</a></td>
+          </tr>
+          <tr>
+            <td><a href="#EarlyStages">Early stages of rocket launchers</a></td>
+          </tr>
+          <tr>
+            <td><a href="#Developments">Technological developments and military applications in the 1700–1800s</a></td>
+          </tr>
+          <tr>
+            <td><a href="#ModernRocketry">Dawn of modern rocketry</a></td>
+          </tr>
+          <tr>
+            <td><a href="#GlobalImpact">Global impact</a></td>
+          </tr>
+          <tr>
+            <td><a href="#Conclusion">Conclusions</a></td>
+          </tr>
+          <tr>
+            <td><a href="#References">References</a></td>
+          </tr>
+        </table>
+        </p>
+
+        <!-- Abstract Section (not included in the word count) -->
+        <h3 id="Abstract">Abstract</h3>
+        <p class="ex1">In the dawn of the 20th and the 21st century Rocket booster are a seen as a staple for the technological push into the vast unknown space, by inducing a massive thrust they can push past the earths gravitational pull. Companies such as space x has invested $15 billion all together (primary with private funding) (<a href="#ref-Roulette2026">Roulette and Wang, 2026</a>) improving its effectiveness at survival catastrophic scenarios and locations using specific metal alloys to survive high intense pressure but also can handle multiple entry into the atmosphere without burning up (<a href="#ref-Torralba2024">Torralba, 2024</a>) along with the Nasa space shuttle programme in which with the rocket booster tanks and engines has originally invested $10.6 billion ($60 billion adjusted to 2025/2026) in which $444 million ($2.5 billion adjusted for today society) was spent Soley on building the launch and processing facilities (<a href="#ref-Dreier2026">Dreier, 2026</a>).</p>
+
+        <!-- Main article: everything inside this div is counted by the word count -->
+        <div id="Article_InText">
+
+        <!-- Introduction Section -->
+        <h3 id="Introduction">Introduction</h3>
+        <p class="ex1">In the past 20 years we have seen exponential growth in terms of modern rocket in which company’s such as space x have created “metal chopsticks” (<a href="#ref-Wall2024b">Wall, 2024b</a>) and catch towers along with an orbital class rocket state booster in 2015 to re land itself along with change in fuels instead for the rocket engine with help of NASA’s Exploration system Architecture Study and private companies such as XCOR were able to research and produce LOX/methane engines switching from a liquid oxygen based fuel towards methanol liquid which has been pushing for greater longanimity and long term storability for missions in the future such as the moon or mars (SAE, 2007).</p>
+
+        <!-- Early stages Section -->
+        <h3 id="EarlyStages">Early stages of rocket launchers</h3>
+        <p class="ex1">Initially, early medieval rockets were associated with weaponry, especially gunpowder, during the 1200s, examples included bamboo filed gunpowder poles and Examples included bamboo poles filled with gunpowder. Due to their effectiveness at inflicting the most damage over a large range, they spread all around the world (Needham, 1986; <a href="#ref-Haw2013">Haw, 2013</a>).</p>
+
+        <!-- Technological developments Section -->
+        <h3 id="Developments">Technological developments and military applications in the 1700–1800s</h3>
+        <p class="ex1">In the 1700 to 1800s there were more tightly incorporated into the military field. A major field William Congreve pioneered the design of improved rockets based on Mysore rockets (<a href="#ref-Stephen1887">Stephen, 1887</a>). Later, Congreve and Hale, inspired by the previous Mysorean rockets, designed improved heavy military rockets used in the Napoleonic Wars (<a href="#ref-Wikipedia2009">Wikipedia, 2009</a>). This idea finally came to light when the American physicist Robert Goddard launched the first successful liquid-fuelled rocket. Unlike traditional solid-fuel rockets, the propellants could be stored separately and could theoretically be throttled. Furthermore, a liquid-based fuel system allows for smaller, lighter combustion chambers relative to the energy they produce (<a href="#ref-NASA2021">NASA, 2021</a>).</p>
+
+        <!-- Dawn of modern rocketry Section -->
+        <h3 id="ModernRocketry">Dawn of modern rocketry</h3>
+        <p class="ex1">Over the early 20th century there was a technological boom in rockets due to World War II and the Cold War (the Space Race). In 1957 the Soviets successfully launched their first artificial satellite into space, proving that liquid-fuelled rockets could be advanced enough to achieve orbital velocity, followed by a human in space on Vostok 1 in April 1961 (NASA; Wikipedia – Sputnik 1 &amp; Vostok 1). Along with these achievements by the Soviets, the US formed NASA and developed the Saturn V rocket—a three-stage liquid-fuelled vehicle standing 363 feet tall, powered by liquid oxygen, kerosene, and liquid hydrogen—and it was the only rocket at the time capable of carrying humans beyond low Earth orbit (<a href="#ref-NASA2010a">NASA, 2010a</a>). Nowadays, at the dawn of the 21st century, NASA increased reusability by operating the partially reusable Space Shuttle from 1981 to 2011. Furthermore, new aerospace companies such as SpaceX and Blue Origin have helped push forward reusable launch vehicles, which have significantly lowered the cost of access to space.</p>
+
+        <!-- Table 1 -->
+        <p class="ex1"><b>Table 1: Key stages in the development of rocket propulsion</b></p>
+        <table style="width: 100%; max-width: 900px;">
+          <tr>
+            <th>Period</th>
+            <th>Example</th>
+            <th>Propellant</th>
+            <th>Key development</th>
+            <th>Source</th>
+          </tr>
+          <tr>
+            <td>1200s</td>
+            <td>Chinese bamboo gunpowder rockets</td>
+            <td>Solid (gunpowder)</td>
+            <td>Used as weapons over a large range; spread around the world</td>
+            <td><a href="#ref-Haw2013">Haw (2013)</a></td>
+          </tr>
+          <tr>
+            <td>1700–1800s</td>
+            <td>Mysorean and Congreve rockets</td>
+            <td>Solid (gunpowder)</td>
+            <td>Improved heavy military rockets used in the Napoleonic Wars</td>
+            <td><a href="#ref-Stephen1887">Stephen (1887)</a>; <a href="#ref-Wikipedia2009">Wikipedia (2009)</a></td>
+          </tr>
+          <tr>
+            <td>1926</td>
+            <td>Goddard’s first liquid-fuelled rocket</td>
+            <td>Liquid</td>
+            <td>Propellants stored separately, could be throttled, lighter combustion chambers</td>
+            <td><a href="#ref-NASA2021">NASA (2021)</a></td>
+          </tr>
+          <tr>
+            <td>1957–1970s</td>
+            <td>Sputnik 1, Vostok 1, Saturn V</td>
+            <td>Liquid oxygen, kerosene, liquid hydrogen</td>
+            <td>Reached orbital velocity; first human in space; only rocket able to carry humans beyond low Earth orbit</td>
+            <td><a href="#ref-NASA2010a">NASA (2010a)</a></td>
+          </tr>
+          <tr>
+            <td>1981–2011</td>
+            <td>NASA Space Shuttle</td>
+            <td>Liquid main engines with solid rocket boosters</td>
+            <td>Partially reusable; $10.6 billion original investment</td>
+            <td><a href="#ref-NASA2010b">NASA (2010b)</a>; <a href="#ref-Dreier2026">Dreier (2026)</a></td>
+          </tr>
+          <tr>
+            <td>2015–present</td>
+            <td>SpaceX Falcon 9 and Starship</td>
+            <td>LOX/kerosene (Falcon 9); LOX/methane (Starship)</td>
+            <td>Boosters that land themselves and are caught by tower “chopsticks”; lower launch costs</td>
+            <td><a href="#ref-SpaceX2024">SpaceX (2024)</a>; <a href="#ref-Wall2024b">Wall (2024b)</a></td>
+          </tr>
+        </table>
+
+        <!-- Global impact Section -->
+        <h3 id="GlobalImpact">Global impact</h3>
+        <p class="ex1">Due to the heavy progression is the power and efficiently of the rocket launcher with Nasa alone they have causes a persistent global risk with the geophysical research letters confirming that their Artemis II mission in 2026 triggered an ionospheric disturbance (short term fluctuations in the ionosphere) stretching roughly around 3100 metres (<a href="#ref-Choi2026">Choi et al., 2026</a>).</p>
+
+        <!-- Conclusions Section -->
+        <h3 id="Conclusion">Conclusions</h3>
+        <p class="ex1">The paper analysed the development of rocket propulsions and its historical development and technological evolution of rocket booster. This paper shows Key developments i.e. Goddard’s liquid-fuel innovations and the large-scale rockets of the Space Race, NASA’s Space Shuttle programme (<a href="#ref-NASA2010b">NASA, 2010b</a>) and modern private-sector systems such as SpaceX’s recoverable boosters which demonstrate a clear trajectory toward greater efficiency, reusability, and reduced launch costs (<a href="#ref-SpaceX2024">SpaceX, 2024</a>). At the same time, the paper has identified that these advances are accompanied by measurable environmental effects, such as ionospheric disturbances linked to recent large-scale missions. In this respect, the paper has largely fulfilled its intended purpose by mapping both the technical progress and the emerging challenges of modern rocketry. The research of this paper has reinforced the understanding of future developments in rocket technology.</p>
+
+        </div>
+        <!-- End of main article -->
+
+        <!-- References Section (not included in the word count) -->
+        <h3 id="References">References</h3>
+        <p class="ex1" id="ref-Berger2019">Berger, E. (2019) ‘Elon Musk, Man of Steel, reveals his stainless Starship’, <i>Ars Technica</i>, 29 September. Archived from the original on 28 December 2019 (Accessed: 30 September 2019).</p>
+
+        <p class="ex1" id="ref-Choi2026">Choi, J.-M., Lin, C.C.H., Chou, M.-Y., Rajesh, P.K., Yue, J. et al. (2026) ‘Rare reoccurring ionospheric disturbances observed during the Artemis-II Lunar flyby voyage’, <i>ESS Open Archive</i> [Preprint], 22 July. Available at: <a href="https://spaceweather.com/images2026/26oct26/Artemis-II%20ionosphere%20disturbances.pdf" target="_blank">https://spaceweather.com/images2026/26oct26/Artemis-II%20ionosphere%20disturbances.pdf</a></p>
+
+        <p class="ex1" id="ref-Dreier2026">Dreier, C. (2026) ‘Your guide to NASA’s budget’, <i>The Planetary Society</i>. Available at: <a href="https://planetary.org/space-policy/nasa-budget" target="_blank">https://planetary.org/space-policy/nasa-budget</a></p>
+
+        <p class="ex1" id="ref-Haw2013">Haw, S.G. (2013) ‘Cathayan arrows and meteors: the origins of Chinese rocketry’, <i>Journal of Chinese Military History</i>. Available at: <a href="https://www.researchgate.net/publication/274995873_Cathayan_Arrows_and_Meteors_The_Origins_of_Chinese_Rocketry" target="_blank">https://www.researchgate.net/publication/274995873_Cathayan_Arrows_and_Meteors_The_Origins_of_Chinese_Rocketry</a></p>
+
+        <p class="ex1" id="ref-NASA2010a">NASA (2010a) <i>What was the Saturn V? (Grades 5–8)</i>. Available at: <a href="https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-saturn-v-grades-5-8/" target="_blank">https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-saturn-v-grades-5-8/</a></p>
+
+        <p class="ex1" id="ref-NASA2010b">NASA (2010b) <i>Saturn V</i>. National Aeronautics and Space Administration. Available at: <a href="https://www.nasa.gov/" target="_blank">https://www.nasa.gov/</a></p>
+
+        <p class="ex1" id="ref-NASA2021">NASA (2021) <i>95 years ago: Goddard’s first liquid-fueled rocket</i>. Available at: <a href="https://www.nasa.gov/history/95-years-ago-goddards-first-liquid-fueled-rocket/" target="_blank">https://www.nasa.gov/history/95-years-ago-goddards-first-liquid-fueled-rocket/</a></p>
+
+        <p class="ex1" id="ref-Roulette2026">Roulette, J. and Wang, E. (2026) ‘SpaceX spending on Starship tops $15 billion in rush to airline-like rocketry’, <i>Reuters</i>, 1 May. Available at: <a href="https://www.reuters.com/business/autos-transportation/spacex-spending-starship-tops-15-billion-rush-airline-like-rocketry-2026-05-01/" target="_blank">https://www.reuters.com/business/autos-transportation/spacex-spending-starship-tops-15-billion-rush-airline-like-rocketry-2026-05-01/</a></p>
+
+        <p class="ex1" id="ref-Shattered2026">Shattered.io (2026) <i>Artemis II ionosphere hit: 3.7 TECU, no GPS outage</i>. Available at: <a href="https://shattered.io/artemis-ii-ionosphere-disturbance-gps-3-7-tecu-no-outage-2026/" target="_blank">https://shattered.io/artemis-ii-ionosphere-disturbance-gps-3-7-tecu-no-outage-2026/</a></p>
+
+        <p class="ex1" id="ref-SpaceX2024">SpaceX (2024) <i>Falcon 9 and Falcon Heavy</i>. Available at: <a href="https://www.spacex.com/" target="_blank">https://www.spacex.com/</a></p>
+
+        <p class="ex1" id="ref-Stephen1887">Stephen, L. (ed.) (1887) <i>Dictionary of National Biography</i>, Vol. 12. New York: Macmillan, p. 8.</p>
+
+        <p class="ex1" id="ref-Torralba2024">Torralba, J.M. (2024) ‘Why Elon Musk uses stainless steel for his new spacecraft’, <i>IMDEA Materiales</i>, 4 October. Available at: <a href="https://materials.imdea.org/why-elon-musk-uses-stainless-steel-for-his-new-spacecraft/" target="_blank">https://materials.imdea.org/why-elon-musk-uses-stainless-steel-for-his-new-spacecraft/</a></p>
+
+        <p class="ex1" id="ref-Wall2024a">Wall, M. (2024a) ‘SpaceX Starship launches, aces 1st catch of Super Heavy booster with launch tower’, <i>Space.com</i>, 14 October (Accessed: 15 October 2024).</p>
+
+        <p class="ex1" id="ref-Wall2024b">Wall, M. (2024b) ‘SpaceX catches giant Starship booster with “chopsticks” on historic Flight 5 rocket launch and landing (video)’, <i>Space.com</i>. Available at: <a href="https://www.space.com/spacex-starship-flight-5-launch-super-heavy-booster-catch-success-video" target="_blank">https://www.space.com/spacex-starship-flight-5-launch-super-heavy-booster-catch-success-video</a></p>
+
+        <p class="ex1" id="ref-Wikipedia2009">Wikipedia (2009) <i>Mysorean rockets</i> (citing Werrett, 2009). Available at: <a href="https://en.wikipedia.org/wiki/Mysorean_rockets" target="_blank">https://en.wikipedia.org/wiki/Mysorean_rockets</a></p>
+
+        <p class="ex1" id="ref-WikipediaTimeline2009">Wikipedia (2009) <i>Timeline of rocket and missile technology</i>. Available at: <a href="https://en.wikipedia.org/wiki/Timeline_of_rocket_and_missile_technology" target="_blank">https://en.wikipedia.org/wiki/Timeline_of_rocket_and_missile_technology</a></p>
+
+        <!-- Word count script (supplied code, Lab H3), set to count the main article only -->
+        <script>
+          // Function to calculate the word count for a specified section
+          function displayWordCount(sectionId) {
+            // Get the text content from the specified section
+            const text = document.getElementById(sectionId).textContent;
+            // Split text into words based on spaces and filter out any empty strings
+            const wordArray = text.trim().split(/\s+/);
+            // Count the words
+            const wordCount = wordArray.length;
+            // Return the word count for summing purposes
+            return wordCount;
+          }
+          // Function to calculate and display total word count from the main article
+          function displayTotalWordCount() {
+            const ArticleCount = displayWordCount("Article_InText");
+            const totalWordCount = ArticleCount;
+            // Display the total word count
+            document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+          }
+          // Run the time stamp and the word count when the page loads
+          window.onload = function () {
+            getLastUpdatedTime();
+            displayTotalWordCount();
+          };
+        </script>
+
+    </body>
+</html>
